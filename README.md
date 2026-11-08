@@ -4,17 +4,23 @@
 
 Two desktop apps and a built-in offline model in each download.
 
-- **PROFFITABILITY JOURNAL** for screenshot-first trade logging, separate Live and Backtesting records, and daily and weekly reviews. The included Qwen3 1.7B text model runs Coach and weekly review drafts locally.
+- **PROFFITABILITY JOURNAL** for quick trade logging with optional screenshots, separate Live and Backtesting records, and daily and weekly reviews. The included Qwen3 1.7B text model runs Coach conversations and weekly review drafts on your device.
 - **ChartVeil** for local chart backgrounds with automatic display detection and original-resolution media.
 
-[Download for Mac · Apple Silicon](https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.3/Journal-ChartVeil-Mac-arm64-clean.zip) · [Download for Windows · x64](https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.3/Journal-ChartVeil-Windows-x64.zip) · [Release and checksums](https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.3)
+[Mac download and setup](https://popetonm.github.io/proffitability-journal-releases/mac/) · [Windows download and setup](https://popetonm.github.io/proffitability-journal-releases/windows/) · [Illustrated app guide](https://popetonm.github.io/proffitability-journal-releases/guide/) · [Release and checksums](https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.4)
 
-Extract the full ZIP and open **START HERE.txt**. Choose Apple Silicon Mac or Windows x64. Mac uses an ad hoc signature and Windows may display a publisher warning. [Apple's first-launch instructions](https://support.apple.com/en-us/102445)
+**Mac** — Open the DMG, drag the **PROFFITABILITY JOURNAL** folder onto **Applications**, then open either app from that folder.
 
-Open Journal and ask a question in **Coach** to start the bundled model. Open ChartVeil and choose **Settings → Connect TradingView Desktop** on Mac. On Windows, choose **Settings → Open extension folder** and load that folder through Chrome's Extensions page. Journal exports PNG on both systems, plus GIF and MP4 on Mac.
+**Windows** — Run **Setup**, then open Journal or ChartVeil from **Start**.
+
+These are beta installers. macOS may ask for first-launch approval and Windows may display a publisher warning. [Apple's first-launch instructions](https://support.apple.com/en-us/102445)
+
+Open the **?** button in Journal for the walkthrough. Open **Coach** and send a message to load the included model. For ChartVeil and its optional Chrome connection, follow the [installation and setup guide](INSTALL.md).
+
+![Quick trade logging with optional pictures](docs/screenshots/mac-log-trade.png)
 
 For feedback, send Plamen the app, operating system, steps, expected result and what happened. Remove account information and private trade details from screenshots.
 
-The release includes the Mac encoder's corresponding FFmpeg source and build recipe. Third-party notices ship with the software. [Qwen3 weights](https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF) · [Sharp libvips source](https://github.com/lovell/sharp-libvips)
+Journal uses FFmpeg 9.0.2 under LGPL 2.1 or later. [FFmpeg source and Mac build recipe](https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.3/FFmpeg-9.0.2-clean-source.zip) · [Windows build recipe](docs/third-party/ffmpeg-windows-build.sh) · [Qwen3 weights](https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF) · [Tesseract English OCR weights](https://github.com/tesseract-ocr/tessdata_fast/tree/87416418657359cb625c412a48b6e1d6d41c29bd)
 
-These are independent tools and are unaffiliated with TradingView or Discord.
+These independent tools are unaffiliated with TradingView.

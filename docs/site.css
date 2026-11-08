@@ -1,0 +1,38 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #eff4f0;
+  background: #101714;
+  --muted: #c2cec6;
+  --line: #3c4b42;
+  --panel: #19231d;
+  --accent: #bce9cc;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+header, main, footer { width: min(960px, 100% - 36px); margin: auto; }
+header { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+nav a { padding: 8px 0; }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:focus-visible { outline: 2px solid #ffdc80; outline-offset: 4px; }
+[aria-current="page"] { color: white; }
+main { padding-block: 44px; }
+h1 { font-size: clamp(2rem, 6vw, 3.7rem); letter-spacing: -.04em; margin: 0 0 12px; line-height: 1.06; }
+h2 { font-size: 1.35rem; margin: 0 0 10px; }
+p, li { line-height: 1.65; color: var(--muted); }
+ul, ol { padding-left: 22px; }
+li + li { margin-top: .35rem; }
+section { margin-block: 28px; }
+.kicker { font-size: .82rem; letter-spacing: .12em; font-weight: 700; color: var(--accent); text-transform: uppercase; margin: 0 0 10px; }
+.panel { padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 15px; }
+.download { display: inline-block; padding: 11px 15px; border-radius: 7px; color: #101714; background: var(--accent); font-weight: 700; text-decoration: none; }
+.download:hover { background: #ddf5e5; }
+figure { margin: 22px 0 0; }
+img { width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid var(--line); }
+figcaption { color: var(--muted); margin-top: 8px; font-size: .92rem; }
+footer { border-top: 1px solid var(--line); padding: 10px 0 20px; font-size: .9rem; }
+.skip { position: fixed; top: 8px; left: 8px; transform: translateY(-200%); background: var(--panel); padding: 10px; }
+.skip:focus { transform: none; }
+code { overflow-wrap: anywhere; }
