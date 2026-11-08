@@ -6,7 +6,7 @@ Three desktop tools in one download per platform.
 - **ChartVeil** for local chart backgrounds with automatic display detection and original-resolution media.
 - **TradingView Presence** for Discord Desktop activity, a session timer, and a daily streak.
 
-[Download Beta 1](https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.1)
+[Mac Beta 2 · Apple Silicon](https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.2) · [Windows Beta 1 · x64](https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.1)
 
 Extract the full ZIP and open **START HERE.txt**. Choose Apple Silicon Mac or Windows x64. Mac uses an ad hoc signature and Windows may display a publisher warning. [Apple's first-launch instructions](https://support.apple.com/en-us/102445)
 
