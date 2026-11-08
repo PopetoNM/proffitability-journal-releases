@@ -1,5 +1,7 @@
 # PROFFITABILITY JOURNAL + ChartVeil
 
+![PROFFITABILITY JOURNAL desktop suite for Mac and Windows](social-preview.png)
+
 Two desktop apps and a built-in offline model in each download.
 
 - **PROFFITABILITY JOURNAL** for screenshot-first trade logging, separate Live and Backtesting records, and daily and weekly reviews. The included Qwen3 1.7B text model runs Coach and weekly review drafts locally.
