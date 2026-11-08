@@ -5,7 +5,7 @@ Two desktop apps and a built-in offline model in each download.
 - **PROFFITABILITY JOURNAL** for screenshot-first trade logging, separate Live and Backtesting records, and daily and weekly reviews. The included Qwen3 1.7B text model runs Coach and weekly review drafts locally.
 - **ChartVeil** for local chart backgrounds with automatic display detection and original-resolution media.
 
-[Mac · Apple Silicon downloads](https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.3) · [Download for Windows · x64](https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.3/Journal-ChartVeil-Windows-x64.zip)
+[Download for Mac · Apple Silicon](https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.3/Journal-ChartVeil-Mac-arm64-clean.zip) · [Download for Windows · x64](https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.3/Journal-ChartVeil-Windows-x64.zip) · [Release and checksums](https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.3)
 
 Extract the full ZIP and open **START HERE.txt**. Choose Apple Silicon Mac or Windows x64. Mac uses an ad hoc signature and Windows may display a publisher warning. [Apple's first-launch instructions](https://support.apple.com/en-us/102445)
 
