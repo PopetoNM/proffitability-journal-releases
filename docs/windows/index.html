@@ -15,19 +15,25 @@
   <main id="main">
     <p class="kicker">Windows 11 or later · x64</p>
     <h1>Install on Windows</h1>
-    <p>One Setup app installs Journal, ChartVeil, and the offline model for your Windows account. In Settings → System → About, check that System type shows an x64-based processor.</p>
+    <p>One 1.65 GB Setup app installs Journal, ChartVeil, and the offline model for your Windows account. In <strong>Settings → System → About</strong>, check for Windows 11 and an x64-based processor.</p>
     <a class="download" href="https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.4/Proffitability-Journal-Windows-x64-Setup.exe">Download Windows Setup</a>
     <section class="panel">
-      <h2>Install in three steps</h2>
+      <h2>Download and install</h2>
       <ol>
-        <li>Open <strong>Proffitability-Journal-Windows-x64-Setup.exe</strong> from Downloads.</li>
-        <li>Follow Setup. It installs under your Windows account.</li>
-        <li>Open <strong>PROFFITABILITY JOURNAL</strong> or <strong>ChartVeil</strong> from Start.</li>
+        <li>Wait for the download to finish. In File Explorer, open <strong>Downloads</strong> and double-click <strong>Proffitability-Journal-Windows-x64-Setup.exe</strong>.</li>
+        <li>Select <strong>Install</strong> and wait for it to finish. Select <strong>Finish</strong>. Setup may offer to launch Journal immediately.</li>
+        <li>Open <strong>Start</strong> and search for <strong>PROFFITABILITY JOURNAL</strong> and <strong>ChartVeil</strong>. Each has its own shortcut.</li>
       </ol>
-      <p>This tester beta has an unsigned Windows installer. If Windows shows a publisher warning, verify the file came from the linked GitHub release and compare its checksum with the one on that release.</p>
+    </section>
+    <section id="verify"><h2>Verify the download or troubleshoot a warning</h2>
+      <p>In PowerShell, run this command and compare the result with the <a href="https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.4/SHA256-Windows.txt">Windows checksum</a>. If you moved the file, use its current path.</p>
+      <pre><code>(Get-FileHash "$env:USERPROFILE\Downloads\Proffitability-Journal-Windows-x64-Setup.exe" -Algorithm SHA256).Hash</code></pre>
+      <p>This beta is unsigned. If you see a publisher warning, verify the source and checksum before deciding whether to continue. Smart App Control or a managed-device policy can block unsigned installers. <a href="https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions">Microsoft’s Smart App Control guide</a></p>
     </section>
     <figure><img src="../screenshots/windows-coach.png" alt="Coach on Windows answering a follow-up about the fictional notebook Cedar Kite"><figcaption>Coach runs on the device and keeps context within the current conversation.</figcaption></figure>
-    <section><h2>First launch</h2><p>Open <strong>Coach</strong> and send a message to load the model. <a href="../guide/#chartveil">Follow the ChartVeil guide</a> for Chrome and optional TradingView Desktop setup.</p></section>
+    <section><h2>Check both apps</h2><p>In Journal, open <strong>Coach</strong> and send “Hello” with the bundled model selected. In ChartVeil, choose <strong>Apply</strong> on a built-in image and confirm the preview changes. <a href="../guide/#chartveil">Connect ChartVeil to TradingView</a></p>
+      <p>To upgrade, back up Journal through <strong>Settings → Data &amp; backup</strong>, quit both apps, and run the new Setup. To remove both apps, use <strong>Settings → Apps → Installed apps → PROFFITABILITY JOURNAL → Uninstall</strong>. <a href="https://github.com/PopetoNM/proffitability-journal-releases/blob/main/INSTALL.md">Full installation guide on GitHub</a></p>
+    </section>
   </main>
   <footer><p><a href="https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.4">Release and checksums</a> · <a href="https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.3/FFmpeg-9.0.2-clean-source.zip">FFmpeg source (LGPL)</a></p></footer>
 </body>

@@ -31,8 +31,16 @@ section { margin-block: 28px; }
 .download:hover { background: #ddf5e5; }
 figure { margin: 22px 0 0; }
 img { width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid var(--line); }
+.trailer { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; border-radius: 10px; border: 1px solid var(--line); background: #0b1310; }
 figcaption { color: var(--muted); margin-top: 8px; font-size: .92rem; }
 footer { border-top: 1px solid var(--line); padding: 10px 0 20px; font-size: .9rem; }
 .skip { position: fixed; top: 8px; left: 8px; transform: translateY(-200%); background: var(--panel); padding: 10px; }
 .skip:focus { transform: none; }
 code { overflow-wrap: anywhere; }
+pre {
+  overflow-x: auto;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--panel);
+}

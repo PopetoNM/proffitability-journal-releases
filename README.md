@@ -9,6 +9,8 @@ Two desktop apps and a built-in offline model in each download.
 
 [Mac download and setup](https://popetonm.github.io/proffitability-journal-releases/mac/) · [Windows download and setup](https://popetonm.github.io/proffitability-journal-releases/windows/) · [Illustrated app guide](https://popetonm.github.io/proffitability-journal-releases/guide/) · [Release and checksums](https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.4)
 
+[Watch the 15-second product trailer](https://popetonm.github.io/proffitability-journal-releases/#trailer)
+
 **Mac** — Open the DMG, drag the **PROFFITABILITY JOURNAL** folder onto **Applications**, then open either app from that folder.
 
 **Windows** — Run **Setup**, then open Journal or ChartVeil from **Start**.

@@ -15,19 +15,25 @@
   <main id="main">
     <p class="kicker">Apple Silicon · Arm64</p>
     <h1>Install on Mac</h1>
-    <p>One disk image includes Journal, ChartVeil, and the offline model. In Apple menu → About This Mac, look for an Apple chip.</p>
+    <p>One 1.65 GB disk image includes Journal, ChartVeil, and the offline model. In <strong>Apple menu → About This Mac</strong>, check that the Chip field names an Apple chip.</p>
     <a class="download" href="https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.4/Proffitability-Journal-Mac-arm64.dmg">Download the Mac installer</a>
     <section class="panel">
-      <h2>Install in three steps</h2>
+      <h2>Download and install</h2>
       <ol>
-        <li>Open the downloaded <strong>.dmg</strong> from Downloads.</li>
-        <li>Drag the <strong>PROFFITABILITY JOURNAL</strong> folder onto <strong>Applications</strong>.</li>
-        <li>Open that folder in Applications and launch Journal or ChartVeil.</li>
+        <li>Wait for the download to finish. In Finder, open <strong>Downloads</strong> and double-click <strong>Proffitability-Journal-Mac-arm64.dmg</strong>.</li>
+        <li>Drag the <strong>PROFFITABILITY JOURNAL</strong> folder onto the <strong>Applications</strong> shortcut in the installer window. Wait for Finder to finish copying.</li>
+        <li>Open <strong>Finder → Applications → PROFFITABILITY JOURNAL</strong>. Open Journal and ChartVeil from that folder. You can eject the disk image after the copy finishes.</li>
       </ol>
-      <p>This beta uses an ad hoc signature. If macOS blocks the first launch, check that you downloaded this exact release, then follow <a href="https://support.apple.com/en-us/102445">Apple’s first-launch instructions</a>.</p>
+    </section>
+    <section id="verify"><h2>Verify the download or fix a first-launch warning</h2>
+      <p>In Terminal, run this command and compare the result with the <a href="https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.4/SHA256-Mac.txt">Mac checksum</a>. If you moved the file, use its current path.</p>
+      <pre><code>shasum -a 256 "$HOME/Downloads/Proffitability-Journal-Mac-arm64.dmg"</code></pre>
+      <p>For a matching download, if macOS says the developer cannot be verified, try to open the app first, then open <strong>System Settings → Privacy &amp; Security</strong> and use <strong>Open Anyway</strong> for that app. If the checksum differs or macOS says the file is damaged, download a fresh copy. <a href="https://support.apple.com/en-us/102445">Apple’s first-launch instructions</a></p>
     </section>
     <figure><img src="../screenshots/mac-app-guide.png" alt="The built-in App guide dialog with shortcuts to trade logging, weekly review, Coach and appearance"><figcaption>Use the question-mark button to reopen the guide.</figcaption></figure>
-    <section><h2>First launch</h2><p>In Journal, open <strong>Coach</strong> and send a message to load the model. In ChartVeil, open <strong>Settings → Automatic backgrounds</strong> and follow the TradingView Desktop connection prompt. <a href="../guide/#chartveil">ChartVeil setup and controls</a>.</p></section>
+    <section><h2>Check both apps</h2><p>In Journal, open <strong>Coach</strong> and send “Hello” with the bundled model selected. The first reply can take longer as the model loads. In ChartVeil, choose <strong>Apply</strong> on a built-in image and confirm the preview changes. <a href="../guide/#chartveil">Connect ChartVeil to TradingView</a></p>
+      <p>For an update, use <strong>Settings → Data &amp; backup</strong> in Journal, quit both apps, and replace the installed folder with the new one. <a href="https://github.com/PopetoNM/proffitability-journal-releases/blob/main/INSTALL.md">Full installation guide on GitHub</a></p>
+    </section>
   </main>
   <footer><p><a href="https://github.com/PopetoNM/proffitability-journal-releases/releases/tag/v0.4.0-beta.4">Release and checksums</a> · <a href="https://github.com/PopetoNM/proffitability-journal-releases/releases/download/v0.4.0-beta.3/FFmpeg-9.0.2-clean-source.zip">FFmpeg source (LGPL)</a></p></footer>
 </body>
